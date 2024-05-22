@@ -133,3 +133,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f "/home/josephkan/.ghcup/env" ] && . "/home/josephkan/.ghcup/env" # ghcup-env
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
