@@ -135,3 +135,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "/home/josephkan/.ghcup/env" ] && . "/home/josephkan/.ghcup/env" # ghcup-env
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+
+
+
