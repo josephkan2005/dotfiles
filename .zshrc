@@ -20,7 +20,6 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
@@ -109,6 +108,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # User configuration
 
