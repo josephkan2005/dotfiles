@@ -6,7 +6,6 @@ export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export EDITOR="nvim"
-export GOOGLE_AI_API_KEY="AIzaSyDsoja4qLKT6SAdqTruqtdefiV0MxqKtJw"
 
 #if [ -z "$SSH_AUTH_SOCK" ] ; then
 #  eval `ssh-agent -s`
