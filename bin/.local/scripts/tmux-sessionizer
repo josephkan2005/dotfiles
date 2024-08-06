@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    folders=$(fd .  ~/ ~/school ~/projects ~/.config --min-depth=1 --max-depth=1 --type=d --hidden -L)
+    folders=$(fd .  ~/school ~/projects --min-depth=1 --max-depth=1 --type=d --hidden -L)
     selected=$(echo "$folders" | fzf)
 fi
 
