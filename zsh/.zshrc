@@ -22,7 +22,7 @@ export NVM_DIR="$HOME/.nvm"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 
-export STOW_FOLDERS="bash,nvim,tmux,personal,zsh"
+export STOW_FOLDERS="bash,bin,nvim,tmux,personal,zsh"
 export DOTFILES="$HOME/.dotfiles"
 
 
