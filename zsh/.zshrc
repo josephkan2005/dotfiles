@@ -4,7 +4,7 @@
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 
 #if [ -z "$SSH_AUTH_SOCK" ] ; then
