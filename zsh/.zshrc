@@ -24,6 +24,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export STOW_FOLDERS="bash,bin,nvim,tmux,personal,zsh"
 export DOTFILES="$HOME/.dotfiles"
+export IENG6_MODULES="cs120fa24"
 
 if [ ! -e "$XDG_RUNTIME_DIR/bus" ]; then
     /usr/bin/dbus-daemon --session --address=$DBUS_SESSION_BUS_ADDRESS --nofork --nopidfile --syslog-only &
