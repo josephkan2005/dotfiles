@@ -31,6 +31,9 @@ fi
 
 . "$HOME/.cargo/env"
 
+fpath+=($HOME/.local/scripts)
+autoload -Uz login-ieng6
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
