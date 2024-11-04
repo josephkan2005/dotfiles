@@ -3,6 +3,7 @@ nnoremap <leader>ev :Explore<CR>
 nnoremap <leader>so :so ~/.vimrc<CR>
 nnoremap <leader>sv :e ~/.vimrc<CR>
 
+set hidden
 set nocompatible
 filetype on
 filetype plugin on
@@ -61,6 +62,6 @@ nnoremap <leader><leader> :Buffers<CR>
 nnoremap <leader>s/ :Lines<CR>
 nnoremap <leader>/ :BLines<CR>
 nnoremap <leader>sp :Tags<CR>
-nnoremap <leader>sb :BTags<CR>
+nnoremap <leader>sc :BTags<CR>
 
 colorscheme jellybeans
