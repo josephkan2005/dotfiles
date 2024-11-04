@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export PATH="$PATH:$JAVA_HOME/bin"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -146,3 +148,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# pnpm
+export PNPM_HOME="/home/josephkan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
