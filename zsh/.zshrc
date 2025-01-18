@@ -8,6 +8,7 @@ export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
+export OCL_ICD_VENDORS=/home/josephkan/pocl/build/
 
 #if [ -z "$SSH_AUTH_SOCK" ] ; then
 #  eval `ssh-agent -s`
