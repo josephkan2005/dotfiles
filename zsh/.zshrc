@@ -8,6 +8,7 @@ export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
+export MINICOM="-s -c on"
 export OCL_ICD_VENDORS=/home/josephkan/pocl/build/ocl-vendors/
 export POCL_BUILDING=1
 export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
@@ -34,6 +35,9 @@ export IENG6_MODULES="cs120fa24"
 if [ ! -e "$XDG_RUNTIME_DIR/bus" ]; then
     /usr/bin/dbus-daemon --session --address=$DBUS_SESSION_BUS_ADDRESS --nofork --nopidfile --syslog-only &
 fi
+
+# From nrfutil completion install
+[[ -r "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh" ]] && . "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh"
 
 . "$HOME/.cargo/env"
 
