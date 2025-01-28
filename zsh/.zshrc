@@ -40,8 +40,7 @@ fi
 # From nrfutil completion install
 [[ -r "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh" ]] && . "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh"
 
-source ~/ncs/v2.5.2/zephyr/zephyr-env.sh
-alias activate-cse122="source ~/ncs/.venv/bin/activate"
+alias activate-cse122="source ~/ncs/.venv/bin/activate; source ~/ncs/v2.5.2/zephyr/zephyr-env.sh"
 
 . "$HOME/.cargo/env"
 
