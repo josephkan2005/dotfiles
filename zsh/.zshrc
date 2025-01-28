@@ -8,10 +8,11 @@ export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
+export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
+
 export MINICOM="-s -c on"
 export OCL_ICD_VENDORS=/home/josephkan/pocl/build/ocl-vendors/
 export POCL_BUILDING=1
-export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
 
 #if [ -z "$SSH_AUTH_SOCK" ] ; then
 #  eval `ssh-agent -s`
@@ -38,6 +39,8 @@ fi
 
 # From nrfutil completion install
 [[ -r "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh" ]] && . "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh"
+
+source ~/ncs/v2.5.2/zephyr/zephyr-env.sh
 
 . "$HOME/.cargo/env"
 
