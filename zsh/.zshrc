@@ -40,7 +40,19 @@ fi
 # From nrfutil completion install
 [[ -r "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh" ]] && . "${HOME}/.nrfutil/share/nrfutil-completion/scripts/zsh/setup.zsh"
 
-alias activate-cse122="source ~/ncs/.venv/bin/activate; source ~/ncs/v2.5.2/zephyr/zephyr-env.sh"
+function activate-cse122() {
+    sdk_ver=$1
+    if [[ -z $sdk_ver ]]; then
+        sdk_ver=v2.9.0
+    fi
+    sdk_path=~/ncs/$sdk_ver/zephyr/zephyr-env.sh
+    if [[ ! -f $sdk_path ]] {
+        echo Invalid SDK path!
+        return
+    }
+    source ~/ncs/.venv/bin/activate
+    source ~/ncs/$sdk_ver/zephyr/zephyr-env.sh
+}
 
 . "$HOME/.cargo/env"
 
