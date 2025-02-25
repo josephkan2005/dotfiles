@@ -1,7 +1,7 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = git@github.com:Person1234565/nvim-config.git
+	url = git@github.com:josephkan2005/nvim-config.git
 
 [submodule "personal"]
 	path = personal
-	url = git@github.com:Person1234565/personal.git
+	url = git@github.com:josephkan2005/personal.git
