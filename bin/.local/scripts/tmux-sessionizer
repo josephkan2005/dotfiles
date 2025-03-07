@@ -5,11 +5,13 @@ if [[ $# -eq 1 ]]; then
 else
     baseFolders=(
         "$HOME/school" 
+        "$HOME/.dotfiles" 
+        "$HOME/.config/nvim" 
         "$HOME/projects" 
         "$HOME/projects/dump" 
         "/mnt/c/Users/josep/Desktop/Toppings"
     )
-    folders=$(fd . ${baseFolders[@]} --min-depth=1 --max-depth=1 --type=d --hidden -L)
+    folders=$(fd . ${baseFolders[@]} --min-depth=0 --max-depth=1 --type=d --hidden -L)
     selected=$(echo "$folders" | fzf)
 fi
 
