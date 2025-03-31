@@ -7,12 +7,15 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/cuda/bin/:$PATH"
 export EDITOR="nvim"
 export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
 
 export MINICOM="-s -c on"
 export OCL_ICD_VENDORS=/home/josephkan/pocl/build/ocl-vendors/
 export POCL_BUILDING=1
+export OptiX_INSTALL_DIR=/home/josephkan/.local/opt/nvidia-optix-sdk-9.0.0/ 
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib/ 
 
 #if [ -z "$SSH_AUTH_SOCK" ] ; then
 #  eval `ssh-agent -s`
