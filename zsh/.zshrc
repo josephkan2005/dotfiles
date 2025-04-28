@@ -8,7 +8,7 @@ export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/cuda/bin/:$PATH"
-export PATH="/home/josephkan/intelFPGA/20.1/modelsim_ase/bin/"
+export PATH="$PATH:/home/josephkan/intelFPGA/20.1/modelsim_ase/bin/"
 export EDITOR="nvim"
 export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
 
