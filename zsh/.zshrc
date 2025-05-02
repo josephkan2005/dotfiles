@@ -4,6 +4,7 @@
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 export PATH="$PATH:$JAVA_HOME/bin"
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
