@@ -10,6 +10,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/cuda/bin/:$PATH"
 export PATH="$PATH:/home/josephkan/intelFPGA/20.1/modelsim_ase/bin/"
+export PATH="$PATH:/home/josephkan/intelFPGA_lite/24.1std/quartus/bin/"
 export EDITOR="nvim"
 export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
 
@@ -182,3 +183,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export QSYS_ROOTDIR="/home/josephkan/intelFPGA_lite/24.1std/quartus/sopc_builder/bin"

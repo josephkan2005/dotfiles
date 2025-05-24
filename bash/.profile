@@ -28,3 +28,5 @@ fi
 
 [ -f "/home/josephkan/.ghcup/env" ] && . "/home/josephkan/.ghcup/env" # ghcup-env
 . "$HOME/.cargo/env"
+
+export QSYS_ROOTDIR="/home/josephkan/intelFPGA_lite/24.1std/quartus/sopc_builder/bin"

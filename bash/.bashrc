@@ -141,3 +141,5 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 
 . "$HOME/.cargo/env"
+
+export QSYS_ROOTDIR="/home/josephkan/intelFPGA_lite/24.1std/quartus/sopc_builder/bin"
