@@ -5,6 +5,8 @@ if [[ $# -eq 1 ]]; then
 else
     baseFolders=(
         "$HOME/school" 
+        "$HOME/work" 
+        "$HOME/work/filyn" 
         "$HOME/.dotfiles" 
         "$HOME/.config/nvim" 
         "$HOME/projects" 
