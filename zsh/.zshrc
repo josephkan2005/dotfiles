@@ -34,7 +34,7 @@ export NVM_DIR="$HOME/.nvm"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 
-export STOW_FOLDERS="bash,bin,nvim,tmux,personal,zsh"
+export STOW_FOLDERS="bash,bin,nvim,vim,tmux,personal,zsh,misc"
 export DOTFILES="$HOME/.dotfiles"
 export IENG6_MODULES="cs120fa24"
 
