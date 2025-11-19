@@ -31,8 +31,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
 
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
+export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | batcat -p -lman'"
 
 export STOW_FOLDERS="bash,bin,nvim,vim,tmux,personal,zsh,misc"
 export DOTFILES="$HOME/.dotfiles"
