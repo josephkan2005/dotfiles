@@ -139,8 +139,8 @@ plugins=(
     rust
     nvm
     npm
-    zsh-syntax-highlighting 
     zsh-autosuggestions 
+    zsh-syntax-highlighting 
 )
 
 zstyle ':omz:plugins:*' aliases no
