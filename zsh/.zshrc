@@ -138,7 +138,6 @@ plugins=(
     uv
     rust
     nvm
-    npm
     zsh-autosuggestions 
     zsh-syntax-highlighting 
 )
