@@ -137,9 +137,12 @@ plugins=(
     git 
     docker 
     docker-compose 
+    kubectl
     zsh-syntax-highlighting 
     zsh-autosuggestions 
 )
+
+zstyle ':omz:plugins:*' aliases no
 
 source $ZSH/oh-my-zsh.sh
 
