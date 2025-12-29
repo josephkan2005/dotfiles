@@ -144,6 +144,7 @@ plugins=(
 
 zstyle ':omz:plugins:*' aliases no
 zstyle ':omz:plugins:nvm' lazy yes
+zstyle ':omz:plugins:nvm' lazy-cmd nvim vim 
 
 source $ZSH/oh-my-zsh.sh
 
