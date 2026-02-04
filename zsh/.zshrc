@@ -187,5 +187,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+bindkey "^U" backward-kill-line
+
 export QSYS_ROOTDIR="/home/josephkan/intelFPGA_lite/24.1std/quartus/sopc_builder/bin"
 # zprof
