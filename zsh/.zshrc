@@ -12,7 +12,6 @@ export PATH="/usr/local/cuda/bin/:$PATH"
 export PATH="$PATH:/home/josephkan/intelFPGA/20.1/modelsim_ase/bin/"
 export PATH="$PATH:/home/josephkan/intelFPGA_lite/24.1std/quartus/bin/"
 export EDITOR="nvim"
-export WSL_HOST=$(ip route show | grep -i default | awk '{ print $3}')
 
 export MINICOM="-s -c on"
 export OCL_ICD_VENDORS=/home/josephkan/pocl/build/ocl-vendors/
