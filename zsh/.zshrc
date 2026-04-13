@@ -13,6 +13,7 @@ export PATH="$PATH:/home/josephkan/intelFPGA/20.1/modelsim_ase/bin/"
 export PATH="$PATH:/home/josephkan/intelFPGA_lite/24.1std/quartus/bin/"
 export EDITOR="nvim"
 
+export HF_HOME="$HOME/models/huggingface"
 export MINICOM="-s -c on"
 export OCL_ICD_VENDORS=/home/josephkan/pocl/build/ocl-vendors/
 export POCL_BUILDING=1
@@ -190,3 +191,6 @@ bindkey "^U" backward-kill-line
 
 export QSYS_ROOTDIR="/home/josephkan/intelFPGA_lite/24.1std/quartus/sopc_builder/bin"
 # zprof
+
+# opencode
+export PATH=/home/josephkan/.opencode/bin:$PATH
