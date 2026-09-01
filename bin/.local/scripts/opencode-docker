@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+project="${PWD##*/}"
+
+echo "opencode-${project}"
+
+docker run -it --name "opencode-${project}" \
+    -v /home/josephkan/.local/state/opencode:/home/node/.local/state/opencode \
+    -v /home/josephkan/.local/share/opencode:/home/node/.local/share/opencode \
+    -v /home/josephkan/.local/share/opentui:/home/node/.local/share/opentui \
+    -v /home/josephkan/.config/opencode:/home/node/.config/opencode \
+    -v ./:/app:rw \
+    --user node --network host --entrypoint bash opencode-docker
