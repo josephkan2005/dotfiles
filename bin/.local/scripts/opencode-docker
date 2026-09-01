@@ -5,9 +5,9 @@ project="${PWD##*/}"
 echo "Opening opencode-${project}..."
 
 docker run --rm -it --name "opencode-${project}" \
-    -v /home/josephkan/.local/state/opencode:/home/node/.local/state/opencode \
-    -v /home/josephkan/.local/share/opencode:/home/node/.local/share/opencode \
-    -v /home/josephkan/.local/share/opentui:/home/node/.local/share/opentui \
-    -v /home/josephkan/.config/opencode:/home/node/.config/opencode \
+    -v "${HOME}/.local/state/opencode:/home/node/.local/state/opencode" \
+    -v "${HOME}/.local/share/opencode:/home/node/.local/share/opencode" \
+    -v "${HOME}/.local/share/opentui:/home/node/.local/share/opentui" \
+    -v "${HOME}/.config/opencode:/home/node/.config/opencode" \
     -v ./:/app:rw \
     --user node --network host --entrypoint bash opencode-docker
