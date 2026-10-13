@@ -32,7 +32,6 @@ export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08
 
 export STOW_FOLDERS="bash,bin,nvim,vim,tmux,personal,zsh,misc"
 export DOTFILES="$HOME/.dotfiles"
-export IENG6_MODULES="cs120fa24"
 
 if [ ! -e "$XDG_RUNTIME_DIR/bus" ]; then
     /usr/bin/dbus-daemon --session --address=$DBUS_SESSION_BUS_ADDRESS --nofork --nopidfile --syslog-only &

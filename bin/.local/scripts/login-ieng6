@@ -1,2 +1,0 @@
-#!/bin/bash
-ssh -t jokan@ieng6.ucsd.edu "export SSH_LOGIN_COMMAND="$1"; bash -l"
