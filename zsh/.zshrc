@@ -59,6 +59,8 @@ function activate-cse122() {
 fpath+=($HOME/.local/scripts)
 autoload -Uz login-ieng6
 
+source $HOME/.local/scripts/opencode-sandbox.zsh
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
