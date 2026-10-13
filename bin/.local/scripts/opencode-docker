@@ -8,6 +8,6 @@ docker run --rm -it --name "opencode-${project}" \
     -v "${HOME}/.local/state/opencode:/home/node/.local/state/opencode" \
     -v "${HOME}/.local/share/opencode:/home/node/.local/share/opencode" \
     -v "${HOME}/.local/share/opentui:/home/node/.local/share/opentui" \
-    -v "${HOME}/.config/opencode:/home/node/.config/opencode" \
+    -v "$(realpath "${HOME}"/.config/opencode/opencode.json):/home/node/.config/opencode/opencode.json" \
     -v ./:/app:rw \
-    --user node --network host --entrypoint bash opencode-docker
+    --user node --network llamacpp --entrypoint bash opencode-docker
